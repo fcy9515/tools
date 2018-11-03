@@ -7,13 +7,13 @@ spring:
     filters: stat,wall,log4j
     logSlowSql: true
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/druid?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull&useSSL=false
-    password: 123456
+    url: jdbc:oracle:thin:@127.0.0.1:1521:ORCL?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull&useSSL=false
+    password: settleadmin
     testOnBorrow: false
     testWhileIdle: true
     minEvictableIdleTimeMillis: 300000
     timeBetweenEvictionRunsMillis: 60000
     testOnReturn: false
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: oracle.jdbc.driver.OracleDriver
     maxActive: 20
-    username: root
+    username: settleadmin
